@@ -1,0 +1,4 @@
+CBMC version 5.8 64-bit x86_64 linux
+failed to open input file `main.c.i'
+EXIT=6
+SIGNAL=0
