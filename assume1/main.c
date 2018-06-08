@@ -6,7 +6,7 @@ int main()
   assert(x!=-1);
 
   // assumptions are not retro-active
-  assert(x==1); // fails
+  //assert(x==1); // fails
   
   assume(x==1);
   assert(x==1); // passes

@@ -1,5 +1,5 @@
 CORE
-main.i
+main.c.i
 --unwind 5 --unwinding-assertions
 ^EXIT=0$
 ^SIGNAL=0$
