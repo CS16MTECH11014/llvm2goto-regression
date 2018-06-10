@@ -12,7 +12,9 @@ int main()
 	assert(res2<0); //Will be -1
 
 	//Associativity
-	int arr[5] = {2,1,3,5,7};
+	int arr[5] ; //= {2,1,3,5,7};
+	arr[0] = 2 ; arr[1] = 1; arr[2] = 3 ; arr[3] = 5 ; arr[4] = 7 ;
+
 	int res3 = arr[0] & arr[1] & arr[2] & arr[3] & arr[4];
 	assert(res3==0);
 

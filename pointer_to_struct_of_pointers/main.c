@@ -5,7 +5,17 @@ struct S
 
 int main()
 {
-	int array[3][3] = {{11,12,13},{14,15,16},{17,18,19}};
+	int array[3][3] ; //= {{11,12,13},{14,15,16},{17,18,19}};
+	int temp = 11;
+
+	for(int i=0 ; i<3 ; i++)
+	{
+	  for(int j=0 ; j<3 ; j++)
+	  {
+               array[i][j] = temp ;
+               temp++ ;
+          }
+        }
 
 	struct S * s_ptr ;
 	s_ptr = s_arr ;

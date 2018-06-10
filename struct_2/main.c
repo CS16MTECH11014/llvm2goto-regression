@@ -24,7 +24,8 @@ int main()
 	int i=0 ;
 	while(i<N)
 	{
-		objects[i].s2_s1 = (struct S1){v1,v2};
+		objects[i].s2_s1.s1_a = v1 ; //= (struct S1){v1,v2};
+		objects[i].s2_s1.s1_b = v2 ;
 		v1++ ;
 		v2++ ;
 

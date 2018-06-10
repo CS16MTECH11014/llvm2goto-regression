@@ -19,8 +19,8 @@ int main()
   s.l=0;
 
   struct BF* ptr=(struct BF*)((char*)&s+1);
-  struct BF bf=*ptr;
-  assert(bf.i==0, "");
+  //struct BF bf=*ptr;
+  assert(ptr->i==0);
 
   return 0;
 }

@@ -9,12 +9,29 @@ int main()
   // this checks whether the alias analysis can
   // track pointers in multi-dimensional arrays
 
-  iptr array[3][3]={{&x,0,0},{&y,0,0},{&z,0,0}};
+  iptr array[3][3] ; //={{&x,0,0},{&y,0,0},{&z,0,0}};
 
+  for(int i=0 ; i<3; i++)
+  {
+     for(int j=0 ; j<3 ; j++)
+     {
+       for(int k=0 ; k<3 ; k++)
+	{
+           array[i][j][k] = 0 ;
+        }
+     }
+   }
+
+  array[1][0][0] = &x ;
+  array[2][0][0] = &y ;
+  array[3][0][0] = &z ;
+
+	
   unsigned int a, b;
   a = nondet_uint();
   b = nondet_uint();
-  __CPROVER_assume (a < 3 && b < 3);
+  
+  assume (a < 3 && b < 3);
 
   array[a][b] = &z;
 
