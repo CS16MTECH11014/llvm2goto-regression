@@ -9,5 +9,5 @@ int main()
   //assert(x==1); // fails
   
   assume(x==1);
-  assert(x==1); // passes
+  assert(x!=1); // passes
 }

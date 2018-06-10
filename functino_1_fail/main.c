@@ -1,5 +1,3 @@
-//Simple Function . Undefined nondet_int()
-
 int nondet_int();
 
 double d = 0.0;
@@ -24,5 +22,5 @@ int main()
   if(x>3)
   	d+=1;
 
-  assert(d == 2.0);
+  assert(d != 2.0);
 }

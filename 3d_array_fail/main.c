@@ -2,7 +2,7 @@
 
 int main()
 {
-	int array[N][N][N] = {2,2,2,2,2,2,2,2};
+	int array[N][N][N] = {2,2,2,2,2,2,3,2};
 
 	int product = 1 ;
 
@@ -24,6 +24,6 @@ int main()
 	}
 
 
-	assert(product == array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]);
+	assert(product == array[0][0][0]*array[0][1][0]*array[0][1][0]*array[0][1][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]*array[0][0][0]);
 
 }

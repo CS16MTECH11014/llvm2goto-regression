@@ -2,7 +2,7 @@ int fun(int arr[], int n)
 {
     int x = arr[0];
     for (int i = 1; i < n; i++)
-        x = x ^ arr[i];
+        x = x ^ ~arr[i];
     return x;
 }
 int main()
@@ -22,9 +22,9 @@ int main()
 	arr[10] = 9 ;
 	arr[11] = 11 ;
 	arr[12] = 2;
-	int x = fun(arr,10);
+	int x = fun(arr,13);
 
-	assert(x==9);
+	assert(x== ~9);
 
 	return 0 ;
 }

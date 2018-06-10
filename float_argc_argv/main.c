@@ -1,5 +1,3 @@
-#include <assert.h>
-
 int main (int argc, char **argv) {
   float f =  0x1.9e0c22p-101f;
   float g = -0x1.3c9014p-50f;
@@ -10,8 +8,4 @@ int main (int argc, char **argv) {
   assert(result == target);
 
   return 0;
-}
-
-int f(int a) {
-	return a + 1;
 }

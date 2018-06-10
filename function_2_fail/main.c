@@ -1,5 +1,3 @@
-//Function definition inside function definition followed by call
-
 int global;
 
 void f()
@@ -17,6 +15,6 @@ void g()
 int main()
 {
   f();
-  assert(global!=123);
+  assert(global==123);
   return 0;
 }

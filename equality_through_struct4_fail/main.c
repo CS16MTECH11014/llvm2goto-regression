@@ -22,7 +22,7 @@ int main (void)
 
   pass_through_struct(&s,q);
 
-  assert(q == s.z);
+  assert(q != s.z || s.y != s.z );
 
   return 1;
 }

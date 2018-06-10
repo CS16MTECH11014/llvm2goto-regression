@@ -1,5 +1,3 @@
-#include <assert.h>
-
 void insertionSort(int arr[], int n)
 {
    int i, key, j;
@@ -23,6 +21,7 @@ int main()
   int arr[N];
 
   insertionSort(arr, N);
+
 
   //Should Pass
   for(int i=1 ; i<N ; i++)
